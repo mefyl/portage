@@ -1,0 +1,27 @@
+# Copyright 1999-2009 Gentoo Foundation
+# Distributed under the terms of the GNU General Public License v2
+# $Id$
+
+EAPI=6
+
+inherit eutils
+
+DESCRIPTION="Peer to peer decentralized filesystem"
+
+HOMEPAGE="https://infinih.sh/"
+SRC_URI="https://debian.infinit.sh/pool/trusty/main/i/infinit/infinit_${PV}_amd64.deb"
+SLOT="0"
+KEYWORDS="amd64"
+IUSE=""
+DEPEND=""
+RDEPEND=""
+S="${WORKDIR}"
+
+src_unpack() {
+    unpack "${A}"
+    tar -xf "data.tar.xz" || die "unable to extract data.tar.xz"
+}
+
+src_install() {
+    cp -r "opt" "$D" || die "unable to copy contents"
+}
