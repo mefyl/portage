@@ -2,10 +2,21 @@ Personal custom Gentoo packages collection.
 
 # Packages
 
-* Infinit: Peer to peer decentralized file system. I work at Infinit,
-  this is the simplest way to install our binary packages. I may do
-  source packages in the future.
-* Prince XML: convert XML/HTML to PDF.
+## Infinit
+
+https://infinit.sh
+
+Peer to peer decentralized file system. I'm CTO at Infinit, this is
+the simplest way to install our binary packages. I may do source
+packages in the future.
+
+## Prince XML
+
+https://www.princexml.com
+
+Convert XML/HTML to PDF. Prince is free for non-commercial use. This
+package is a simple wrapper for the
+[downloadable package](https://www.princexml.com/download/).
 
 # Installation
 
